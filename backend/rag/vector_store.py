@@ -16,9 +16,11 @@ text_splitter = RecursiveCharacterTextSplitter(
 docs = text_splitter.split_documents(documents)
 
 # Embedding model
-embedding_model = HuggingFaceEmbeddings(
-    model_name="sentence-transformers/all-MiniLM-L6-v2"
-)
+###embedding_model = HuggingFaceEmbeddings(
+    ###model_name="sentence-transformers/all-MiniLM-L6-v2"
+###)
+
+###)
 
 # Store in ChromaDB
 vector_db = Chroma.from_documents(

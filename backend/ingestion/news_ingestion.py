@@ -49,15 +49,17 @@ text_splitter = RecursiveCharacterTextSplitter(
 docs = text_splitter.split_documents(documents)
 
 # Embedding model
-embedding_model = HuggingFaceEmbeddings(
-    model_name="sentence-transformers/all-MiniLM-L6-v2"
-)
+###embedding_model = HuggingFaceEmbeddings(
+    ###model_name="sentence-transformers/all-MiniLM-L6-v2"
+###)
+
+###)
 
 # Load existing vector DB
-vector_db = Chroma(
-    persist_directory="../../chroma_db",
-    embedding_function=embedding_model
-)
+####vector_db = Chroma(
+   ### persist_directory="../../chroma_db",
+    ###embedding_function=embedding_model
+####)
 
 # Add documents
 vector_db.add_documents(docs)

@@ -15,15 +15,18 @@ client = Groq(
 )
 
 # Load embedding model
-embedding_model = HuggingFaceEmbeddings(
-    model_name="sentence-transformers/all-MiniLM-L6-v2"
-)
+###embedding_model = HuggingFaceEmbeddings(
+    ###model_name="sentence-transformers/all-MiniLM-L6-v2"
+###)
+
+###)
 
 # Load vector DB
-vector_db = Chroma(
-    persist_directory="../../chroma_db",
-    embedding_function=embedding_model
-)
+###vector_db = Chroma(
+   ### persist_directory="../../chroma_db",
+    ###embedding_function=embedding_model
+###)
+###)
 
 # User query
 query = input("Ask your financial question: ")
