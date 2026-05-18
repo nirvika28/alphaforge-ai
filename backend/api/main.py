@@ -35,16 +35,27 @@ client = Groq(
 )
 
 # Load embedding model
-embedding_model = HuggingFaceEmbeddings(
-    model_name="sentence-transformers/all-MiniLM-L6-v2"
-)
+###embedding_model = HuggingFaceEmbeddings(
+  ###  model_name="sentence-transformers/all-MiniLM-L6-v2"
+###)
 
 # Load vector database
-vector_db = Chroma(
-    persist_directory="../../chroma_db",
-    embedding_function=embedding_model
-)
+###vector_db = Chroma(
+  ###  persist_directory="../../chroma_db",
+  ###  embedding_function=embedding_model
+###)
+def load_vector_db():
 
+    embedding_model = HuggingFaceEmbeddings(
+        model_name="sentence-transformers/all-MiniLM-L6-v2"
+    )
+
+    vector_db = Chroma(
+        persist_directory="../../chroma_db",
+        embedding_function=embedding_model
+    )
+
+    return vector_db
 # Request schema
 class QueryRequest(BaseModel):
     query: str
