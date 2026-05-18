@@ -25,7 +25,7 @@ The platform analyzes financial queries and generates structured AI-driven insig
 
 ---
 
-## ✨ Features
+##  Features
 
 ### 🤖 Multi-Agent Financial AI
 - News Analysis Agent
@@ -33,27 +33,27 @@ The platform analyzes financial queries and generates structured AI-driven insig
 - Market Analysis Agent
 - Final Decision/Insight Agent
 
-### 📈 Real-Time Market Dashboard
+###  Real-Time Market Dashboard
 - Live BTC, ETH, and SOL market tracking
 - Integrated using `yfinance`
 - Dynamic frontend market cards
 
-### 🧠 AI Workflow Orchestration
+###  AI Workflow Orchestration
 - Built using LangGraph
 - Modular multi-agent execution pipeline
 - Structured state management
 
-### 🔍 RAG-Ready Architecture
+###  RAG-Ready Architecture
 - ChromaDB vector database integration
 - HuggingFace embeddings pipeline
 - Retrieval-Augmented Generation support
 
-### 📊 Observability
+###  Observability
 - Langfuse tracing integration
 - AI workflow monitoring
 - Query-response tracking
 
-### 🌐 Full Stack Architecture
+###  Full Stack Architecture
 - FastAPI backend
 - React frontend
 - REST API communication
@@ -98,19 +98,7 @@ The platform analyzes financial queries and generates structured AI-driven insig
 ## 🧩 System Architecture
 
 
-User Query
-     ↓
-FastAPI Backend
-     ↓
-LangGraph Workflow
-     ↓
- ┌──────────────────────┐
- │ News Analysis Agent  │
- │ Risk Analysis Agent  │
- │ Market Analysis Agent│
- └──────────────────────┘
-     ↓
-Final AI Insight
+<img width="1122" height="1402" alt="image" src="https://github.com/user-attachments/assets/53688a4a-86e9-4ee2-8dd0-cfee0c58528a" />
 
 
  EXAMPLE REQUEST:
@@ -118,5 +106,3 @@ Final AI Insight
   "query": "Should I invest in Bitcoin right now?"
 }
 
-     ↓
-React Frontend Display
